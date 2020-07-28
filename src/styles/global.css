@@ -1,0 +1,27 @@
+:root {
+  --font-family: 'Roboto Mono', monospace;
+  --font-size: 1rem;
+  --font-size-small: 0.875em;
+  --font-line-height: 1.5;
+  --font-color: #050D0A;
+  --font-weight: 400;
+
+  --seed: #eee;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--font-line-height);
+  font-weight: var(--font-weight);
+  color: var(--font-color);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

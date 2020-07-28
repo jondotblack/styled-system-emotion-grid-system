@@ -1,0 +1,57 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import { Box, Flex } from '.';
+import { Placeholder } from 'components/placeholder';
+
+<Meta title='Components | Box' />
+
+`Box` and `Flex` are general utility components that extend the Styled System API. Full docs available at https://styled-system.com/api/.
+
+<Preview>
+  <Story name='Box'>
+    <Box>
+      <Placeholder>one</Placeholder>
+      <Placeholder>two</Placeholder>
+      <Placeholder>three</Placeholder>
+    </Box>
+  </Story>
+</Preview>
+
+`Flexbox` docs available at https://styled-system.com/api/#flexbox
+
+<Preview>
+  <Story name='Flex'>
+    <Flex>
+      <Placeholder>one</Placeholder>
+      <Placeholder>two</Placeholder>
+      <Placeholder>three</Placeholder>
+    </Flex>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name='Flex Alignment'>
+    <Flex
+      alignItems="center"
+      justifyContent="center"
+      style={{ 'minHeight': '10rem' }}
+    >
+      <Placeholder>center</Placeholder>
+    </Flex>
+  </Story>
+</Preview>
+
+`Spacing` docs available at https://styled-system.com/api/#space
+
+<Preview>
+  <Story name='Spacing'>
+    <Box>
+      <Placeholder mb={3}>one</Placeholder>
+      <Placeholder mx={5}>two</Placeholder>
+      <Placeholder my={{ sm: 3, md: 4 }}>three</Placeholder>
+      <Placeholder mb={{ _: 0, lg: 5 }}>four</Placeholder>
+      <Placeholder mx={5}>five</Placeholder>
+      <Placeholder mt={4}>six</Placeholder>
+    </Box>
+  </Story>
+</Preview>

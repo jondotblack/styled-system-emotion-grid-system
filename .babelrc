@@ -1,0 +1,42 @@
+{
+  "env": {
+    "production": {
+      "plugins": [
+        [
+          "react-remove-properties",
+          {
+            "properties": ["data-testid"]
+          }
+        ]
+      ]
+    }
+  },
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "emotion",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "extensions": [".js", ".jsx"],
+        "alias": {
+          "components": "./src/components",
+          "mocks": "./src/__mocks__",
+          "static": "./src/static",
+          "styles": "./src/styles",
+          "utils": "./src/utils"
+        },
+      },
+    ],
+  ],
+}
