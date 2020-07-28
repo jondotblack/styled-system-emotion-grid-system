@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Styled System + Emotion Grid System",
   "scripts": {
+    "deploy-storybook": "storybook-to-ghpages",
     "lint": "eslint './src/**/*.{js,jsx}'",
     "storybook": "start-storybook",
     "test": "jest",
@@ -49,6 +50,7 @@
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
+    "@storybook/storybook-deployer": "^2.8.6",
     "@testing-library/jest-dom": "^5.10.0",
     "@testing-library/react": "^10.4.5",
     "babel-jest": "^26.0.1",
